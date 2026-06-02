@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tourism Packages | Al-Samaei Travel & Hajj Services</title>
+  <meta name="description" content="Luxury tourism packages with curated experiences, premium stays, and seamless transportation." />
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-page="tourism">
+  <div id="loading" aria-label="Loading">
+    <div>
+      <div class="spinner" aria-hidden="true"></div>
+      <div class="loading-text">Preparing Your Experience…</div>
+    </div>
+  </div>
+
+  <header class="topbar">
+    <div class="container nav-inner">
+      <a class="brand" href="index.html" aria-label="Al-Samaei Travel & Hajj Services">
+        <span class="mark" aria-hidden="true">⟡</span>
+        <span class="name">
+          <span>Al-Samaei</span>
+          <span>Travel & Hajj Services</span>
+        </span>
+      </a>
+
+      <nav class="nav-links" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="hajj.html">Hajj Packages</a>
+        <a href="umrah.html">Umrah Packages</a>
+        <a href="tourism.html">Tourism Packages</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="videos.html">Videos</a>
+        <a href="testimonials.html">Testimonials</a>
+        <a href="blog.html">Blog</a>
+        <a href="faq.html">FAQ</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="icon-btn" id="themeToggle" type="button" aria-label="Toggle dark/light">🌙</button>
+        <button class="icon-btn hamburger" id="mobileToggle" type="button" aria-label="Open menu" aria-expanded="false">☰</button>
+      </div>
+    </div>
+
+    <div class="container mobile-panel" id="mobilePanel">
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="hajj.html">Hajj Packages</a>
+      <a href="umrah.html">Umrah Packages</a>
+      <a href="tourism.html">Tourism Packages</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="videos.html">Videos</a>
+      <a href="testimonials.html">Testimonials</a>
+      <a href="blog.html">Blog</a>
+      <a href="faq.html">FAQ</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="section" style="padding-top:38px">
+      <div class="container">
+        <div class="reveal" style="display:flex; align-items:flex-end; justify-content:space-between; gap:18px; flex-wrap:wrap">
+          <div>
+            <h1 style="margin:0 0 10px; font-size:40px">Tourism Packages</h1>
+            <p class="sub" style="margin:0">Search, filter, and view details for premium international travel experiences.</p>
+          </div>
+          <div class="badge">✨ Search • Filter • Details Modal</div>
+        </div>
+
+        <div class="panel" style="padding:14px; margin-top:18px">
+          <div class="controls">
+            <div class="field" style="min-width:220px">
+              <span aria-hidden="true">🔎</span>
+              <input id="packageSearch" type="text" placeholder="Search by destination, stay, or transport…" />
+            </div>
+
+            <div class="field" style="min-width:190px">
+              <span aria-hidden="true">⏳</span>
+              <select id="durationFilter" aria-label="Duration filter">
+                <option value="all">All durations</option>
+                <option value="4-6">4–6 days</option>
+                <option value="7-9">7–9 days</option>
+                <option value="14-20">14+ days</option>
+              </select>
+            </div>
+
+            <div class="field" style="min-width:190px">
+              <span aria-hidden="true">🏨</span>
+              <select id="hotelFilter" aria-label="Hotel level filter">
+                <option value="all">All hotel levels</option>
+                <option value="5star">5★ only</option>
+                <option value="4star">4★ only</option>
+              </select>
+            </div>
+
+            <div class="field" style="min-width:190px">
+              <span aria-hidden="true">🚍</span>
+              <select id="transportFilter" aria-label="Transportation filter">
+                <option value="all">All transport</option>
+                <option value="vip">VIP</option>
+                <option value="coach">Coach / transfers</option>
+              </select>
+            </div>
+
+            <div class="field" style="min-width:190px">
+              <span aria-hidden="true">💰</span>
+              <select id="priceFilter" aria-label="Price range filter">
+                <option value="all">Any price</option>
+                <option value="0-3000">Up to 3,000</option>
+                <option value="3000-7000">3,000–7,000</option>
+                <option value="7001-20000">7,001+</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <div id="packagesMount" class="cards" style="margin-top:16px"></div>
+
+        <div class="panel" style="padding:18px; margin-top:18px">
+          <h2 style="margin:0 0 10px">Curated for comfort</h2>
+          <ul class="bullets" style="margin:0">
+            <li><b>Premium stays:</b> verified hotels and convenient locations.</li>
+            <li><b>Guided moments:</b> cultural stops with friendly experts.</li>
+            <li><b>Seamless transport:</b> coordinated transfers and pacing.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <div class="brand" style="margin-bottom:10px">
+          <span class="mark" aria-hidden="true">⟡</span>
+          <span class="name">
+            <span>Al-Samaei</span>
+            <span>Travel & Hajj Services</span>
+          </span>
+        </div>
+        <div class="small">Luxury tourism with curated itineraries and premium comfort.</div>
+        <div class="social soc" style="margin-top:12px">
+          <a href="#" aria-label="Instagram">⌁</a>
+          <a href="#" aria-label="Facebook">⟐</a>
+          <a href="#" aria-label="YouTube">▶</a>
+          <a href="#" aria-label="X">𝕏</a>
+        </div>
+      </div>
+      <div>
+        <div style="font-weight:950">Quick Links</div>
+        <div class="small" style="margin-top:10px; display:flex; flex-direction:column; gap:10px">
+          <a href="hajj.html">Hajj Packages</a>
+          <a href="umrah.html">Umrah Packages</a>
+          <a href="tourism.html">Tourism Packages</a>
+          <a href="gallery.html">Gallery</a>
+        </div>
+      </div>
+      <div>
+        <div style="font-weight:950">Contact</div>
+        <div class="small" style="margin-top:10px">
+          Email: hello@alsamaei.travel
+          <br>Phone: +971 50 000 0000
+        </div>
+        <div style="margin-top:14px">
+          <a class="btn primary" href="contact.html">Plan My Trip →</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <div id="toTop"><button type="button" aria-label="Back to top">↑</button></div>
+  <div class="whatsapp" aria-hidden="false">
+    <a href="https://wa.me/971500000000" target="_blank" rel="noopener" aria-label="WhatsApp">💬</a>
+  </div>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+

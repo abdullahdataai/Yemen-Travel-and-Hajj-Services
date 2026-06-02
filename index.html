@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Al-Samaei Travel & Hajj Services | Luxury Hajj, Umrah & Travel</title>
+  <meta name="description" content="Al-Samaei Travel & Hajj Services provides premium Hajj and Umrah packages, luxury tourism experiences, and trusted guidance." />
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Loading screen -->
+  <div id="loading" aria-label="Loading">
+    <div>
+      <div class="spinner" aria-hidden="true"></div>
+      <div class="loading-text">Preparing Your Experience…</div>
+    </div>
+  </div>
+
+  <!-- Sticky Navigation -->
+  <header class="topbar">
+    <div class="container nav-inner">
+      <a class="brand" href="index.html" aria-label="Al-Samaei Travel & Hajj Services">
+        <span class="mark" aria-hidden="true">⟡</span>
+        <span class="name">
+          <span>Al-Samaei</span>
+          <span>Travel & Hajj Services</span>
+        </span>
+      </a>
+
+      <nav class="nav-links" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="hajj.html">Hajj Packages</a>
+        <a href="umrah.html">Umrah Packages</a>
+        <a href="tourism.html">Tourism Packages</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="videos.html">Videos</a>
+        <a href="testimonials.html">Testimonials</a>
+        <a href="blog.html">Blog</a>
+        <a href="faq.html">FAQ</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="icon-btn" id="themeToggle" type="button" aria-label="Toggle dark/light">🌙</button>
+        <button class="icon-btn hamburger" id="mobileToggle" type="button" aria-label="Open menu" aria-expanded="false">☰</button>
+      </div>
+    </div>
+
+    <div class="container mobile-panel" id="mobilePanel">
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="hajj.html">Hajj Packages</a>
+      <a href="umrah.html">Umrah Packages</a>
+      <a href="tourism.html">Tourism Packages</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="videos.html">Videos</a>
+      <a href="testimonials.html">Testimonials</a>
+      <a href="blog.html">Blog</a>
+      <a href="faq.html">FAQ</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero" id="home">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <h1 class="reveal">
+            Experience <span class="glow-text">Luxury</span> in Every Sacred Journey
+          </h1>
+          <div class="typewrap reveal" style="font-size:18px; font-weight:900; color:var(--muted)">
+            <span class="typing" id="typing" data-words="Hajj|Umrah|Tourism" data-speed="46"></span>
+          </div>
+          <p class="reveal">Al-Samaei Travel & Hajj Services is your trusted companion for Hajj & Umrah packages, premium hotel stays, respectful guidance, and seamless planning.</p>
+
+          <div class="reveal" style="display:flex; gap:12px; flex-wrap:wrap; margin-top:18px">
+            <a class="btn primary" href="hajj.html">Explore Hajj Packages →</a>
+            <a class="btn" href="umrah.html">Explore Umrah Packages →</a>
+            <a class="btn ghost" href="contact.html">Talk to an Advisor</a>
+          </div>
+
+          <div class="hero-card reveal" style="margin-top:22px">
+            <div class="row">
+              <div class="metric">
+                <div class="big counter" data-value="25" aria-label="Years of experience">0</div>
+                <div class="small">Years of Trusted Service</div>
+              </div>
+              <div class="metric">
+                <div class="big counter" data-value="1200" aria-label="Happy pilgrims">0</div>
+                <div class="small">Satisfied Pilgrims & Travelers</div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <aside class="reveal hero-card" aria-label="Quick contact">
+          <div style="display:flex; align-items:flex-start; justify-content:space-between; gap:12px">
+            <div>
+              <div class="badge">⟡ Premium Coordination</div>
+              <h2 style="margin:12px 0 8px; font-size:24px">Need help choosing the best plan?</h2>
+              <p class="sub" style="margin:0">Tell us your dates and preferences—our team will recommend a tailored itinerary.</p>
+            </div>
+          </div>
+          <div style="margin-top:14px; display:flex; flex-direction:column; gap:10px">
+            <a class="btn primary" href="contact.html">Request a Consultation →</a>
+            <a class="btn" href="faq.html">Read FAQ Before Booking →</a>
+            <div style="color:var(--muted); font-weight:850; font-size:13px; margin-top:4px">Response time: typically within 24 hours.</div>
+          </div>
+        </aside>
+      </div>
+
+      <video autoplay muted loop playsinline>
+        <source src="assets/videos/hero.mp4" type="video/mp4">
+      </video>
+
+    </section>
+
+    <!-- Featured packages -->
+    <section class="section" aria-labelledby="featuredTitle">
+      <div class="container">
+        <div class="reveal" style="display:flex; align-items:flex-end; justify-content:space-between; gap:18px; flex-wrap:wrap">
+          <div>
+            <h2 id="featuredTitle">Featured Packages</h2>
+            <p class="sub">Premium Hajj, Umrah, and luxury tourism plans curated for comfort and spiritual focus.</p>
+          </div>
+          <div class="badge">✨ Glassmorphism • Luxury Theme</div>
+        </div>
+
+        <div id="featuredPackages" class="cards" style="margin-top:16px"></div>
+
+        <div class="reveal" style="margin-top:18px; display:flex; gap:12px; flex-wrap:wrap">
+          <a class="btn" href="hajj.html">All Hajj Packages</a>
+          <a class="btn" href="umrah.html">All Umrah Packages</a>
+          <a class="btn ghost" href="tourism.html">All Tourism Packages</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Statistics counters -->
+    <section class="section" aria-labelledby="statsTitle" style="padding-top:20px">
+      <div class="container">
+        <h2 class="reveal" id="statsTitle">Trusted by Thousands</h2>
+        <p class="sub reveal">We combine experienced coordination with modern comfort—so your journey feels effortless.</p>
+
+        <div class="cards" style="margin-top:16px">
+          <div class="panel card" style="grid-column: span 3; padding:18px">
+            <div class="counter" data-value="25" style="font-size:34px; font-weight:950; color:var(--gold2)">0</div>
+            <div class="sub" style="margin:8px 0 0; color:var(--muted); font-weight:800">Years of Experience</div>
+          </div>
+          <div class="panel card" style="grid-column: span 3; padding:18px">
+            <div class="counter" data-value="1200" style="font-size:34px; font-weight:950; color:var(--gold2)">0</div>
+            <div class="sub" style="margin:8px 0 0; color:var(--muted); font-weight:800">Pilgrims Served</div>
+          </div>
+          <div class="panel card" style="grid-column: span 3; padding:18px">
+            <div class="counter" data-value="98" style="font-size:34px; font-weight:950; color:var(--gold2)">0</div>
+            <div class="sub" style="margin:8px 0 0; color:var(--muted); font-weight:800">On-time Coordination</div>
+          </div>
+          <div class="panel card" style="grid-column: span 3; padding:18px">
+            <div class="counter" data-value="4.9" style="font-size:34px; font-weight:950; color:var(--gold2); letter-spacing:-.5px">0</div>
+            <div class="sub" style="margin:8px 0 0; color:var(--muted); font-weight:800">Average Client Rating</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Customer reviews / Testimonials preview -->
+    <section class="section" aria-labelledby="reviewsTitle">
+      <div class="container">
+        <div class="reveal" style="display:flex; align-items:flex-end; justify-content:space-between; gap:18px; flex-wrap:wrap">
+          <div>
+            <h2 id="reviewsTitle">Customer Reviews</h2>
+            <p class="sub">A glimpse of what our clients say about comfort, support, and guidance.</p>
+          </div>
+          <a class="btn ghost" href="testimonials.html">View All Testimonials →</a>
+        </div>
+
+        <div id="testimonialSlider" class="panel" style="margin-top:16px; padding:0">
+          <div class="slide-track" id="testimonialTrack">
+            <div class="slide">
+              <div class="tcard">
+                <div class="stars">★★★★★</div>
+                <div class="quote">“The coordination was exceptional. Hotels were excellent, and the guidance felt calm and professional.”</div>
+                <div style="margin-top:10px; color:var(--muted); font-weight:850">— Amina, Umrah Guest</div>
+              </div>
+            </div>
+            <div class="slide">
+              <div class="tcard">
+                <div class="stars">★★★★★</div>
+                <div class="quote">“Every detail was handled. Transportation and support made the journey smooth from start to finish.”</div>
+                <div style="margin-top:10px; color:var(--muted); font-weight:850">— Hamad, Hajj Traveler</div>
+              </div>
+            </div>
+            <div class="slide">
+              <div class="tcard">
+                <div class="stars">★★★★☆</div>
+                <div class="quote">“Luxury tourism plan with great timing. Guides were knowledgeable and friendly.”</div>
+                <div style="margin-top:10px; color:var(--muted); font-weight:850">— Noor, Tourism Client</div>
+              </div>
+            </div>
+          </div>
+
+          <div style="display:flex; justify-content:space-between; gap:12px; padding:14px 16px; border-top:1px solid rgba(255,255,255,.12)">
+            <button class="btn" type="button" id="testimonialPrev">←</button>
+            <div style="display:flex; gap:8px; align-items:center">
+              <button class="dot" aria-label="Testimonial 1" style="width:10px; height:10px; border-radius:999px; border:1px solid rgba(215,181,109,.45); background:rgba(255,255,255,.10)" data-dot="0"></button>
+              <button class="dot" aria-label="Testimonial 2" style="width:10px; height:10px; border-radius:999px; border:1px solid rgba(215,181,109,.45); background:rgba(255,255,255,.10)" data-dot="1"></button>
+              <button class="dot" aria-label="Testimonial 3" style="width:10px; height:10px; border-radius:999px; border:1px solid rgba(215,181,109,.45); background:rgba(255,255,255,.10)" data-dot="2"></button>
+            </div>
+            <button class="btn" type="button" id="testimonialNext">→</button>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <div class="brand" style="margin-bottom:10px">
+          <span class="mark" aria-hidden="true">⟡</span>
+          <span class="name">
+            <span>Al-Samaei</span>
+            <span>Travel & Hajj Services</span>
+          </span>
+        </div>
+        <div class="small">Luxury Hajj & Umrah coordination with trusted guidance, premium hotels, and seamless transportation.</div>
+        <div class="social soc" style="margin-top:12px">
+          <a href="#" aria-label="Instagram">⌁</a>
+          <a href="#" aria-label="Facebook">⟐</a>
+          <a href="#" aria-label="YouTube">▶</a>
+          <a href="#" aria-label="X">𝕏</a>
+        </div>
+      </div>
+      <div>
+        <div style="font-weight:950">Quick Links</div>
+        <div class="small" style="margin-top:10px; display:flex; flex-direction:column; gap:10px">
+          <a href="hajj.html">Hajj Packages</a>
+          <a href="umrah.html">Umrah Packages</a>
+          <a href="tourism.html">Tourism Packages</a>
+          <a href="gallery.html">Gallery</a>
+        </div>
+      </div>
+      <div>
+        <div style="font-weight:950">Contact</div>
+        <div class="small" style="margin-top:10px">
+          Office Hours: 9:00 AM – 6:00 PM
+          <br>Email: hello@alsamaei.travel
+          <br>Phone: +971 50 000 0000
+        </div>
+        <div style="margin-top:14px">
+          <a class="btn primary" href="contact.html">Get a Quote →</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to top -->
+  <div id="toTop"><button type="button" aria-label="Back to top">↑</button></div>
+
+  <!-- WhatsApp floating -->
+  <div class="whatsapp" aria-hidden="false">
+    <a href="https://wa.me/971500000000" target="_blank" rel="noopener" aria-label="WhatsApp">
+      💬
+    </a>
+  </div>
+
+  <!-- Toast -->
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+

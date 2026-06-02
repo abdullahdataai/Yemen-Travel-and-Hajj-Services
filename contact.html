@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | Al-Samaei Travel & Hajj Services</title>
+  <meta name="description" content="Contact Al-Samaei Travel & Hajj Services for Hajj, Umrah, and luxury tourism coordination." />
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="loading" aria-label="Loading">
+    <div>
+      <div class="spinner" aria-hidden="true"></div>
+      <div class="loading-text">Preparing Your Experience…</div>
+    </div>
+  </div>
+
+  <header class="topbar">
+    <div class="container nav-inner">
+      <a class="brand" href="index.html">
+        <span class="mark" aria-hidden="true">⟡</span>
+        <span class="name">
+          <span>Al-Samaei</span>
+          <span>Travel & Hajj Services</span>
+        </span>
+      </a>
+
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="hajj.html">Hajj Packages</a>
+        <a href="umrah.html">Umrah Packages</a>
+        <a href="tourism.html">Tourism Packages</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="videos.html">Videos</a>
+        <a href="testimonials.html">Testimonials</a>
+        <a href="blog.html">Blog</a>
+        <a href="faq.html">FAQ</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="icon-btn" id="themeToggle" type="button" aria-label="Toggle dark/light">🌙</button>
+        <button class="icon-btn hamburger" id="mobileToggle" type="button" aria-label="Open menu" aria-expanded="false">☰</button>
+      </div>
+    </div>
+
+    <div class="container mobile-panel" id="mobilePanel">
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="hajj.html">Hajj Packages</a>
+      <a href="umrah.html">Umrah Packages</a>
+      <a href="tourism.html">Tourism Packages</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="videos.html">Videos</a>
+      <a href="testimonials.html">Testimonials</a>
+      <a href="blog.html">Blog</a>
+      <a href="faq.html">FAQ</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="section" style="padding-top:38px">
+      <div class="container">
+        <div class="reveal">
+          <h1 style="margin:0 0 10px; font-size:40px">Contact</h1>
+          <p class="sub" style="margin:0">Tell us your dates and preferences—our team will respond within 24 hours.</p>
+        </div>
+
+        <div class="panel" style="padding:18px; margin-top:16px">
+          <form id="contactForm" novalidate>
+            <div class="form-grid">
+              <div class="fieldWrap" style="padding:0 6px">
+                <label for="contactName">Full Name</label>
+                <input id="contactName" name="name" type="text" placeholder="Your name" />
+                <div class="error"></div>
+              </div>
+
+              <div class="fieldWrap" style="padding:0 6px">
+                <label for="contactEmail">Email</label>
+                <input id="contactEmail" name="email" type="email" placeholder="you@example.com" />
+                <div class="error"></div>
+              </div>
+
+              <div class="fieldWrap" style="padding:0 6px">
+                <label for="contactPhone">Phone</label>
+                <input id="contactPhone" name="phone" type="tel" placeholder="+971…" />
+                <div class="error"></div>
+              </div>
+
+              <div class="fieldWrap" style="padding:0 6px">
+                <label for="contactMessage">Message</label>
+                <textarea id="contactMessage" name="message" placeholder="Tell us about your plan…"></textarea>
+                <div class="error"></div>
+              </div>
+            </div>
+
+            <div style="margin-top:14px; display:flex; gap:12px; flex-wrap:wrap; align-items:center">
+              <button class="btn primary" type="submit">Send Request →</button>
+              <div id="contactStatus" style="color:var(--muted); font-weight:800"></div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <div class="brand" style="margin-bottom:10px">
+          <span class="mark" aria-hidden="true">⟡</span>
+          <span class="name">
+            <span>Al-Samaei</span>
+            <span>Travel & Hajj Services</span>
+          </span>
+        </div>
+        <div class="small">Luxury Hajj, Umrah, and tourism—built on trust.</div>
+      </div>
+      <div>
+        <div style="font-weight:950">Quick Links</div>
+        <div class="small" style="margin-top:10px; display:flex; flex-direction:column; gap:10px">
+          <a href="hajj.html">Hajj Packages</a>
+          <a href="umrah.html">Umrah Packages</a>
+          <a href="tourism.html">Tourism Packages</a>
+          <a href="gallery.html">Gallery</a>
+        </div>
+      </div>
+      <div>
+        <div style="font-weight:950">Contact</div>
+        <div class="small" style="margin-top:10px">
+          hello@alsamaei.travel
+          <br>+971 50 000 0000
+        </div>
+        <div style="margin-top:14px">
+          <a class="btn primary" href="contact.html">Request Support →</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <div id="toTop"><button type="button" aria-label="Back to top">↑</button></div>
+  <div class="whatsapp" aria-hidden="false">
+    <a href="https://wa.me/971500000000" target="_blank" rel="noopener" aria-label="WhatsApp">💬</a>
+  </div>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
