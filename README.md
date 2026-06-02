@@ -34,7 +34,7 @@ A modern travel, Hajj, and Umrah website built using HTML, CSS, and JavaScript.
 - FAQ
 - Contact
 
-- ## Screenshots
+## Screenshots
 
 ### Home Page
 
