@@ -38,15 +38,15 @@ A modern travel, Hajj, and Umrah website built using HTML, CSS, and JavaScript.
 
 ### Home Page
 
-![Home](screenshots/home-page.png)
+![Home](screenshots/home-page.png.png)
 
 ### Gallery
 
-![Gallery](screenshots/gallery-page.png)
+![Gallery](screenshots/gallery-page.png.png)
 
 ### Hajj Packages
 
-![Hajj](screenshots/hajj-page.png)
+![Hajj](screenshots/hajj-page.png.png)
 
 ## Author
 
