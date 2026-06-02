@@ -36,17 +36,19 @@ A modern travel, Hajj, and Umrah website built using HTML, CSS, and JavaScript.
 
 ## Screenshots
 
+## Screenshots
+
 ### Home Page
 
-![Home](screenshots/home-page.png.png)
+![Home](home-page.png.png)
 
 ### Gallery
 
-![Gallery](screenshots/gallery-page.png.png)
+![Gallery](gallery-page.png.png)
 
 ### Hajj Packages
 
-![Hajj](screenshots\hajj-page.png.png)
+![Hajj](hajj-page.png.png)
 
 ## Author
 
